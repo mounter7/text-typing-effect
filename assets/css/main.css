@@ -1,0 +1,36 @@
+#section-0 {
+    background: #000;
+    min-height: 100vh;
+}
+#section-0 .container {
+    display: flex;
+    justify-content: center;
+}
+#section-0 .container h1 {
+    margin-top: 4rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 3em;
+}
+#section-0 .container h1 span {
+    color: #ea00ff;
+    position: relative;
+}
+#section-0 .container h1 span::before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 100%;
+    background: #ea00ff;
+    right: -0.5rem;
+    animation: blink 0.7s infinite;
+}
+#section-0 .container h1 span.stop-blinking::before {
+    animation: none;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
