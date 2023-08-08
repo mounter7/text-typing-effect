@@ -1,13 +1,13 @@
 #section-0 {
     background: #000;
-    min-height: 100vh;
 }
 #section-0 .container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 #section-0 .container h1 {
-    margin-top: 4rem;
     color: #fff;
     font-weight: 600;
     font-size: 3em;
@@ -32,5 +32,12 @@
 @keyframes blink {
     50% {
         opacity: 0;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    #section-0 .container h1 {
+        font-size: 2em;
     }
 }
